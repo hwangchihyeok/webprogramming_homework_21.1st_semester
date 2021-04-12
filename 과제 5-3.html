@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script type="text/javascript">
+
+    var num = 0;
+    while(num < 3){
+        alert("아이디와 비밀번호를 입력해주세요");
+        id = prompt("아이디를 입력하시오");
+        pw = prompt("비밀번호를 입력하시오");
+        if (id === "id01" && pw === '1234'){
+            alert("인증에 성공하였습니다.");
+            num++;
+        }
+
+        else if (id === "id02" && pw === '4321'){
+            alert("인증에 성공하였습니다.");
+            num++;
+        }
+
+        else if (id === "id03" && pw === '5678'){
+            alert("인증에 성공하였습니다.");
+            num++;
+        }
+        else alert("인증에 실패하였습니다.");
+    }
+    </script>
+
+</body>
+</html>

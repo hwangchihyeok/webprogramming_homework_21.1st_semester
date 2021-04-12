@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>position:fixed</title>
+    <style>
+        #box0{
+            position: absolute;
+            top: 25px;
+            left: 20px;
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            z-index: 0;
+            opacity : 0.5; 
+        }
+        #box1{
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            z-index: 1;
+            opacity : 0.5; 
+        }
+        #box2{
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            z-index: 2;
+            opacity : 0.5; 
+        }
+        #box3{
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            z-index: 3;
+            opacity : 0.5; 
+        }
+
+
+    </style>
+
+</head>
+<body style="background-color: red">
+    배경 게시판
+    <br>
+    <div id="box0">Box #0</div>
+    <div id="box1">Box #1</div>
+    <div id="box2">Box #2</div>
+    <div id="box3">Box #3</div>
+
+</body>
+</html>

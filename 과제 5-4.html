@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script type="text/javascript">
+
+    var num = 0;
+    var count = 0;
+    var arr = [];
+    while(count < 5){
+        num = prompt("숫자를 입력해주세요");
+        arr[count] = num;
+        count++;
+    }
+
+    document.write("배열 데이터<br>");
+    for (var i = 0 ; i < arr.length; i++){
+        document.write(arr[i] + " ");
+    }
+
+    var sort_arr = [];
+    sort_arr = arr.sort(function(a,b) {return a - b;});
+
+    document.write("</p>정렬 후<br>");
+    for (var i = 0 ; i < sort_arr.length; i++){
+        document.write(sort_arr[i] + " ");
+    }
+    </script>
+
+</body>
+</html>

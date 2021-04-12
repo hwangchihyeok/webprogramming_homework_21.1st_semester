@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도형 서식 폼 만들기</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend> <h1>개인 정보 입력</h1></legend>
+
+            <p>아이디:<input type="text" name="id">
+            <button type="submit">ID중복검사</button></p>
+
+            <p>생년월일:<input type="text" name="today">
+
+            <p>성 별 : <input type="radio">남성
+            <input type="radio">여성</p>
+
+            <p>E-mail:<input type="email"></p>
+            <p>메일수신: <input type="radio">수신동의
+            <input type="radio">수신거부</p>
+
+            <p>핸드폰:<select>
+                <option>010</option>
+                <option>011</option>
+            </select> - <input type="text"> - <input type="text"></p>
+
+            <p>직업: <select>
+                <option>학생</option>
+                <option>군인</option>
+            </select></p>
+
+            <p>취미: <input type="checkbox">쇼핑
+                <input type="checkbox">인터넷
+                <input type="checkbox">음악감상
+                <input type="checkbox">독서
+                <input type="checkbox">스포츠
+            </p>
+
+            <p>자기소개: <textarea rows="5" cols="50"></textarea></p>
+        </fieldset>
+        <br>
+        <input type="submit" value="등록">
+        <input type="submit" value="초기화">
+    </form>
+
+
+
+
+
+</body>

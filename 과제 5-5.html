@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <p>N팩토리얼 계산 값을 입력하시오.</p>
+
+    <input type = "text" id = "N_fact" name = "N_fac">
+    <button onclick = "factorial()">N 팩토리얼 계산</button> 
+
+    <p id = "result"></p>
+
+    <script type="text/javascript">
+    var result = 1;
+
+    //https://www.w3schools.com/jsref/prop_text_value.asp
+    function factorial(){
+        //input 필드에 있는 값(value) 받아오기
+        var N = document.getElementById("N_fact").value;
+
+        for (var i = 0; i < N; i++){
+            result *= (i+1);
+        }
+        //https://www.w3schools.com/js/js_htmldom_document.asp
+        document.getElementById("result").innerHTML = N + "! 계산 결과는 " + result + "입니다."; 
+    }
+    </script>
+
+</body>
+</html>

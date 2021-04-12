@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션</title>
+
+    <style>
+        div{
+            left : 100px;
+            top : 100px;
+            width : 100px;
+            height: 100px;
+            position: relative;
+            animation: imgrotate 2s infinite linear;
+        }    
+
+        @keyframes imgrotate{
+            0% { transform: rotate(-90deg); }
+
+            50% { transform: rotate(90deg); }
+
+            100% { transform: rotate(-90deg);}
+            
+        }
+    </style>
+
+</head>
+<body>
+<div><img src="스폰지밥.jpg"></div>
+   
+ 
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션</title>
+
+    <style>
+        .div1{
+            width : 100px;
+            height: 100px;
+            position: relative;
+            animation: imgrotate1 4s infinite linear;
+            border-top-left-radius:100px
+        }    
+        @keyframes imgrotate1{
+            from{background: red;}
+            25%{background: yellow;}
+            50%{background: green;}
+            75%{background: blue;}
+            from{background: red;}
+        }
+
+        .div2{
+            width : 100px;
+            height: 100px;
+            left:100px;
+            position: relative;
+            animation: imgrotate2 4s infinite linear;
+            border-top-right-radius: 100px;
+        }    
+        @keyframes imgrotate2{
+            from{background: yellow;}
+            25%{background: green;}
+            50%{background: blue;}
+            75%{background: red;}
+            from{background: yellow;}
+        }
+
+        .div3{
+            width : 100px;
+            height: 100px;
+            top:100px;
+            right : 100px;
+            position: relative;
+            animation: imgrotate3 4s infinite linear;
+            border-bottom-left-radius: 100px;
+        }    
+        @keyframes imgrotate3{
+            from{background: green;}
+            25%{background: blue;}
+            50%{background: red;}
+            75%{background: yellow;}
+            from{background: green;}
+        }
+
+        .div4{
+            width : 100px;
+            height: 100px;
+            left :100px;            
+            position: relative;
+            animation: imgrotate4 4s infinite linear;
+            border-bottom-right-radius: 100px;
+        }    
+        @keyframes imgrotate4{
+            from{background: blue;}
+            25%{background: red;}
+            50%{background: yellow;}
+            75%{background: green;}
+            from{background: blue;}
+        }
+    </style>
+
+</head>
+<body>
+    <div class="div1"><div>
+    <div class="div2"><div>
+    <div class="div3"><div>
+    <div class="div4"><div>
+</body>
+</html>
